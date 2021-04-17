@@ -1,0 +1,417 @@
+:root {
+  --primary: #fe5757;
+  --second: #fff177;
+  --third: #45f09e;
+  --blue: #3384fc;
+  --pure: #fff;
+  --some-back: #282828;
+  --oneBlack: #585858;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+}
+
+*::selection {
+  background-color: var(--primary);
+  color: var(--pure);
+}
+
+/* middle container starts */
+
+.container {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+/* middle container ends */
+
+/* header starts */
+
+header {
+  height: 80px;
+  background-color: var(--primary);
+}
+
+.main {
+  display: flex;
+  align-items: center;
+}
+
+/* logo starts */
+
+.logo-container a {
+  font-size: 30px;
+  color: var(--pure);
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2px;
+  transition: 0.2s linear;
+}
+
+.logo-container a:hover {
+  color: var(--third);
+}
+
+/* logo ends */
+
+/* navbar starts */
+
+.nav-container {
+  margin-left: auto;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-container .navbar-items {
+  margin-left: 50px;
+}
+
+.nav-container .navbar-items a {
+  font-size: 18px;
+  color: var(--pure);
+  transition: 0.2s linear;
+}
+
+.nav-container .navbar-items a:hover {
+  color: var(--third);
+}
+
+/* navbar ends */
+
+/* header ends */
+
+/* Animation starts */
+
+.animate {
+  position: absolute;
+  top: 250px;
+  right: 100px;
+  animation: masud 4s linear infinite;
+}
+
+@keyframes masud {
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.animate i {
+  font-size: 200px;
+  opacity: 0.1;
+}
+
+.line2 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--blue);
+  position: absolute;
+  top: 100px;
+  left: 300px;
+  animation: any 5s linear infinite alternate;
+}
+
+@keyframes any {
+  50% {
+    left: 700px;
+  }
+  100% {
+    top: 900px;
+  }
+}
+
+.line3 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--third);
+  position: absolute;
+  top: 200px;
+  left: 400px;
+  animation: any 5s linear infinite alternate;
+}
+
+@keyframes any {
+  50% {
+    left: 600px;
+  }
+  100% {
+    top: 900px;
+  }
+}
+
+/* Animation ends */
+
+/* Service-container starts */
+
+/* Project starts */
+
+.service-container .project-container {
+  position: absolute;
+  background-color: var(--primary);
+  width: 192px;
+  height: 110px;
+  top: 180px;
+}
+
+.service-container .project-container h2 {
+  text-align: center;
+  margin-top: 18px;
+  color: var(--pure);
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.service-container .project-container p {
+  text-align: center;
+  font-size: 25px;
+  color: var(--pure);
+  margin-top: 2px;
+}
+
+/* Project ends */
+
+/* user starts */
+
+.user-container {
+  position: absolute;
+  background-color: var(--second);
+  width: 192px;
+  height: 110px;
+  top: 310px;
+}
+
+.service-container .user-container h2 {
+  text-align: center;
+  margin-top: 18px;
+  color: var(--some-back);
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.service-container .user-container p {
+  text-align: center;
+  font-size: 25px;
+  color: var(--some-back);
+  margin-top: 2px;
+}
+
+/* user ends */
+
+/* review starts */
+
+.service-container .review-container {
+  position: absolute;
+  background-color: var(--third);
+  width: 192px;
+  height: 110px;
+  top: 440px;
+}
+
+.service-container .review-container h2 {
+  text-align: center;
+  margin-top: 18px;
+  color: var(--pure);
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.service-container .review-container p {
+  text-align: center;
+  font-size: 25px;
+  color: var(--pure);
+  margin-top: 2px;
+}
+
+/* review ends */
+
+/* rating starts */
+
+.service-container .rating-container {
+  position: absolute;
+  background-color: var(--blue);
+  width: 192px;
+  height: 110px;
+  top: 570px;
+}
+
+.service-container .rating-container h2 {
+  text-align: center;
+  margin-top: 18px;
+  color: var(--pure);
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.service-container .rating-container p {
+  text-align: center;
+  font-size: 25px;
+  color: var(--pure);
+  margin-top: 2px;
+}
+
+/* rating ends */
+
+/* Service-container ends */
+
+/* main starts */
+
+main {
+  position: relative;
+}
+
+/* profile container starts */
+
+.profile-container {
+  display: flex;
+  margin-top: 150px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.profile-container .image-container {
+  width: 150px;
+  height: 150px;
+}
+
+.profile-container .image-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.profile-container h2 {
+  font-size: 25px;
+  font-weight: 800;
+  color: var(--oneBlack);
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+.profile-container p {
+  margin-top: 5px;
+  font-size: 18px;
+  color: var(--oneBlack);
+}
+
+/* profile container ends */
+
+/* Social icon starts */
+
+.social-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-container .social-items {
+  margin-top: 35px;
+  margin-left: 30px;
+}
+
+.social-container .social-items a i {
+  color: var(--oneBlack);
+  font-size: 30px;
+  transition: 0.2s linear;
+}
+
+.social-container .social-items a i:hover {
+  color: var(--blue);
+}
+
+/* Social icon ends */
+
+/* Skill Section starts*/
+
+.skills h2 {
+  margin-top: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.skills::after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 3px;
+  top: 60%;
+  left: 48.2%;
+  background-color: var(--blue);
+}
+
+.skill-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.skill-container .skill-items {
+  margin-left: 17px;
+}
+
+.skill-container .skill-items a {
+  color: var(--oneBlack);
+  font-size: 16px;
+  transition: 0.2s linear;
+}
+
+.skill-container .skill-items span {
+  color: var(--oneBlack);
+  margin-left: 5px;
+}
+
+.skill-container .skill-items a:hover {
+  color: var(--primary);
+}
+
+/* Skill Section ends*/
+
+/* title & button starts */
+
+.title_button-container {
+  margin-top: 20px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title p {
+  text-align: justify;
+  line-height: 30px;
+  color: var(--oneBlack);
+  font-size: 14px;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+.btn {
+  font-size: 20px;
+  padding: 15px 30px;
+  background-color: var(--blue);
+  color: var(--pure);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* title & button ends */
+
+/* main ends */
